@@ -17,14 +17,19 @@ public interface SecurityConstants {
     String USER_HEADER = "x-user-header";
 
     /**
+     * 用户id信息头
+     */
+    String USER_ID_HEADER = "x-userid-header";
+
+    /**
      * 角色信息头
      */
     String ROLE_HEADER = "x-role-header";
 
     /**
-     * 应用信息头
+     * 租户信息头(应用)
      */
-    String CLIENT_HEADER = "x-client-header";
+    String TENANT_HEADER = "x-tenant-header";
 
     /**
      * 基础角色
@@ -157,4 +162,8 @@ public interface SecurityConstants {
      * redis中用户名对应的token集合的key
      */
     String REDIS_UNAME_TO_ACCESS = "uname_to_access:";
+    /**
+     * rsa公钥
+     */
+    String RSA_PUBLIC_KEY = "pubkey.txt";
 }

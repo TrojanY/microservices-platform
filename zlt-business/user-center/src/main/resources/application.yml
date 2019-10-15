@@ -23,6 +23,13 @@ zlt:
   cache-manager:
     configs:
       - key: menu
-        second: 600
+        second: 300
       - key: user
         second: 1800
+  #多租户配置
+  tenant:
+    enable: true
+    ignoreTables:
+      - sys_user
+      - sys_role_user
+      - sys_role_menu
